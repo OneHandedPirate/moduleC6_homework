@@ -26,7 +26,7 @@ body {
 
 #inpt:focus {
     outline: none;
-    border: 3px solid dodgerblue;
+    border: 3px solid rgba(20, 20, 200, 0.7);
 }
 
 .input {
