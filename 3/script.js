@@ -34,7 +34,6 @@ function getGeo() {
         navigator.geolocation.getCurrentPosition((pos) => {
             const { coords } = pos;
             newMgs(`<a href="https://www.openstreetmap.org/#map=18/${coords.latitude}/${coords.longitude}" target="_blank" style="color:white">Геолокация</a>`, false);
-            newMgs(result, false)
             ws.send(`${pos}`);
         }, () => {
             newMgs('Не удается обработать данные геолокации. Возможно, вы не дали браузеру разрешение на отслеживание вашего местоположения', false);
