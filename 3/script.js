@@ -16,8 +16,7 @@ function newMgs (content, inMsg) {
         msg.classList.add('out');
     }
     chat.append(msg);
-    let elem = document.querySelector('.chat');
-    elem.scrollTop = elem.scrollHeight;
+    chat.scrollTop = chat.scrollHeight;
 }
 
 function sendMsg() {
